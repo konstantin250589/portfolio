@@ -1,0 +1,31 @@
+.percent {
+    padding-top: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, minmax(70px, auto));
+        gap: 30px 45px;
+    }
+    &__divider {
+        position: relative;
+        width: 350px;
+        height: 14px;
+        background: #E8E4DE;
+        border-radius: 4px;
+        margin-top: 27px;
+        span {
+            position: absolute;;
+            height: 14px;
+            background: $main-color;
+            border-radius: 4px;
+        }
+    }
+    &__item {
+        padding-left: 14px;
+        padding-top: 8px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        @include before_circle;
+    }
+}
